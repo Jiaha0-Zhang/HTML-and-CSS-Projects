@@ -109,6 +109,11 @@
     overflow: auto;
     background-color: black;
 }
+
+span{
+    margin-top: 80px;
+    margin-right: 400px;
+}
   
   /* Modal Content */
 .modal-content{
