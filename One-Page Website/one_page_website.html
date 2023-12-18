@@ -5,6 +5,7 @@
 		<title>GAME SHARING</title>
 		<link rel="stylesheet" href="./css/one_page_website.css">
 		<link rel="stylesheet" href="./css/animations.css">
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 
 	<body>
@@ -56,16 +57,15 @@
 					<!--PHOTO-CONTAINER 1-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image1.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image1.png" onclick="openModal();currentSlide(1)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
-					<!--END PHOTO-CONTAINER 1-->
-						
+					
 					<!--PHOTO-CONTAINER 2-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image2.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image2.png" onclick="openModal();currentSlide(2)" alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
@@ -74,7 +74,7 @@
 					<!--PHOTO-CONTAINER 3-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image3.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image3.png" onclick="openModal();currentSlide(3)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
@@ -83,7 +83,7 @@
 					<!--PHOTO-CONTAINER 4-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image4.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image4.png" onclick="openModal();currentSlide(4)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 					<!--PHOTO-CONTAINER 5-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image5.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image5.png" onclick="openModal();currentSlide(5)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
@@ -100,7 +100,7 @@
 					<!--PHOTO-CONTAINER 6-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image6.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image6.png" onclick="openModal();currentSlide(6)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
@@ -109,7 +109,7 @@
 					<!--PHOTO-CONTAINER 7-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image7.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image7.png" onclick="openModal();currentSlide(7)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
@@ -118,7 +118,7 @@
 					<!--PHOTO-CONTAINER 8-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image8.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image8.png" onclick="openModal();currentSlide(8)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
@@ -127,11 +127,110 @@
 					<!--PHOTO-CONTAINER 9-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image9.png"   alt="If the image does not display, please change to another browser">
+							<img src="./images/image9.png" onclick="openModal();currentSlide(9)"  alt=" ">
 							<div class="photo-overlay"></div>							
 						</div>
 					</div>
-					<!--END PHOTO-CONTAINER 9-->		
+					<!--END PHOTO-CONTAINER 9-->
+					
+					<!--Lightbox-->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 9</div>
+							<img src="./images/imageLarge1.png" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 9</div>
+							<img src="./images/imageLarge2.png" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 9</div>
+							<img src="./images/imageLarge3.png" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 9</div>
+							<img src="./images/imageLarge4.png" style="width:100%">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">5 / 9</div>
+							<img src="./images/imageLarge5.png" style="width:100%">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">6 / 9</div>
+							<img src="./images/imageLarge6.png" style="width:100%">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">7 / 9</div>
+							<img src="./images/imageLarge7.png" style="width:100%">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">8 / 9</div>
+							<img src="./images/imageLarge8.png" style="width:100%">
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">9 / 9</div>
+							<img src="./images/imageLarge9.png" style="width:100%">
+						  </div>
+					  
+						  <!-- Next/previous controls -->
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <!-- Caption text -->
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					  
+						  <!-- Thumbnail image controls -->
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall1.png" onclick="currentSlide(1)" alt=" ">
+						  </div>
+					  
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall2.png" onclick="currentSlide(2)" alt=" ">
+						  </div>
+					  
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall3.png" onclick="currentSlide(3)" alt=" ">
+						  </div>
+					  
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall4.png" onclick="currentSlide(4)" alt=" ">
+						  </div>
+
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall5.png" onclick="currentSlide(5)" alt=" ">
+						  </div>
+
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall6.png" onclick="currentSlide(6)" alt=" ">
+						  </div>
+
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall7.png" onclick="currentSlide(7)" alt=" ">
+						  </div>
+
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall8.png" onclick="currentSlide(8)" alt=" ">
+						  </div>
+
+						  <div class="column">
+							<img class="demo" src="./images/imageSmall9.png" onclick="currentSlide(9)" alt=" ">
+						  </div>
+						</div>
+					  </div>
+					<!--End Lightbox-->
 				</div>				
 			</div>
 		</section>
