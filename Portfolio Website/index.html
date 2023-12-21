@@ -51,7 +51,34 @@
         </div>
         <!--End video text-->
 
-         <!--About section-->
+        <!--Slidesshow section-->
+        <div class="carousel">
+            <div class="container">
+                <img src="./images/mypic.jpg" alt="">
+                <img src="./images/HTML_CSS_and_JavaScript.png" alt="">
+                <img src="./images/unityCsharp.jpg" alt="">
+                <img src="./images/netframework.png" alt="">
+                <img src="./images/contactme.jpg" alt="">               
+            </div>
+
+             <div class="shift">
+                <div class="btn left" onclick="leftShift()">&#8592;</div>  <!--left shift-->
+                <div class="btn right" onclick="rightShift()">&#8594;</div> <!--right shift-->
+             </div>
+
+             <div class="bottom">
+                <div class="indicator" onclick="setIndex(0)"></div>  <!--Three bottons at the bottom of images-->
+                <div class="indicator" onclick="setIndex(1)"></div>
+                <div class="indicator" onclick="setIndex(2)"></div>
+                <div class="indicator" onclick="setIndex(3)"></div>
+                <div class="indicator" onclick="setIndex(4)"></div>
+             </div>
+        </div>
+        <!--End Slidesshow section-->
+
+
+
+        <!--About section-->
          <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
@@ -65,7 +92,8 @@
                 <p>
                     My enthusiasm for life and work has never weakened, nor dare it, which is the duty of a father of two to his family.
                     <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web 
+                    and programming languages: HTML, CSS, JavaScript, SQL, C# and more, as well as through self-learning about the use of the unity engine. 
                     <br>
                     <br>I am a developer focused on C# and.NET Framework and ready to work with you on your project. <a href="#Contact">Contact</a> me below!
                 </p>
@@ -124,12 +152,13 @@
         <!--Footer section-->
         <footer>
             <p>
-                <p class="center">&copy github.com/Jiaha0-Zhang <a href="https://github.com/Jiaha0-Zhang" target="_blank">Thank you</a></p>
+                <p class="center">&copy github.com/Jiaha0-Zhang <a href="https://github.com/Jiaha0-Zhang" target="_blank">Always welcome to halt Stay a while to my GitHub</a></p>
                 <br>
             </p>
         </footer>
         <!--End Footer section-->
 
+        <script src="js/portfolio.js"></script>
     </body>
     <!--End Body-->
 </html>
